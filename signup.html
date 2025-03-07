@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Online Libruary </title>
+    
+    
+</head>
+<body>
+<!--Navbar-->
+<section>
+     <nav class="bg-black p-2 fixed w-full shadow-md z-50 max-w-full ">
+        <ul class="container space-x-4 text-white flex">
+            <!--logo-->
+            <img src="Assests/images/logo2.webp" alt="Logo" class="h-12 w-12 object-contain rounded-full ">
+            <span><p class="font-moto text-white-900 font-semibold top-4">THIVYAN BOOK SHOP</p></span>
+            <!--list-->
+            <div class="absolute right-10 top-4 text-white space-x-4 flex">
+                <li><a href="index.html" class="text-white text-lg font-bold hover:text-orange-400">HOME</a></li>
+                <li><a href="#" class="text-white text-lg font-bold hover:text-orange-400">ABOUT</a></li>
+                <li><a href="#" class="text-white text-lg font-bold hover:text-orange-400">SEARCHES</a></li>
+                <li><a href="#" class="text-white text-lg font-bold hover:text-orange-400">GALLERY</a></li>
+                <li><a href="#" class="text-white text-lg font-bold hover:text-orange-400">REVIEW</a></li>
+            <!--Signup-->
+                <li>
+                    <button class="px-3 py-1 border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white hover:border-white transition top-2 right- flex space-x-2 items-center">
+                     Sign up
+                    
+                    </button>
+                </li>
+                </div>
+            </div>
+        </ul>
+     </nav>
+</section>
+<!--nav end-->
+<!--home page-->
+<section>
+    <div id="HOME" class="relative bg-[url('Assests/images/HOME.webp')] bg-cover h-screen justify-center items-center w-full fixed">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 ">
+        <h1 class="text-4xl md:text-5xl font-bold"> WELCOME TO OUR<br> THIVYAN BOOKSHOP</h1>
+             <p class="mt-4 text-lg max-w-2xl font-semibold">"There is no friend as loyal as a book"</p>
+    </div>
+    </div><br>
+</section>
+<!--form-->
+
+<!-- Signup Form -->
+<section class="flex justify-center items-center py-10">
+     <div class="bg-white p-8 rounded shadow-lg w-96">
+        <h2 class="text-2xl font-bold mb-6 text-center">Sign Up</h2>
+            <form id="signupForm">
+             <div class="mb-4">
+                <label for="name" class="block text-gray-700">Name</label>
+                <input type="text" id="name" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700">Email</label>
+                 <input type="email" id="email" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700">Password</label>
+                <input type="password" id="password" class="w-full p-2 border border-gray-300 rounded" required>
+            </div>
+        <button type="submit" class="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Sign Up</button>
+        </form>
+        <!-- Display saved user details -->
+        <div id="savedUserDetails" class="mt-6">
+         <p id="savedName" class="text-gray-700"></p>
+            <p id="savedEmail" class="text-gray-700"></p>
+            <button id="clearData" class="mt-4 w-full bg-red-500 text-white py-2 rounded hover:bg-red-600">Clear Data</button>
+        </div>
+    </div>
+ </section>
+   
+
+   
+
+    <script src="./script.js"></script>
+    </body>
+    </html>

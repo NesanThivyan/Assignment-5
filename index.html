@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Online Libruary </title>
+</head>
+<body>
+<!--Navbar-->
+<section>
+     <nav class="bg-black p-2 fixed w-full shadow-md z-50 max-w-full ">
+        <ul class="container space-x-4 text-white flex">
+            <!--logo-->
+            <img src="Assests/images/logo2.webp" alt="Logo" class="h-12 w-12 object-contain rounded-full ">
+            <span><p class="font-moto text-white-900 font-semibold top-4">THIVYAN BOOK SHOP</p></span>
+            <!--list-->
+            <div class="absolute right-10 top-4 text-white space-x-4 flex">
+                <li><a href="#HOME" class="text-white text-lg font-bold hover:text-orange-400">HOME</a></li>
+                <li><a href="#ABOUT" class="text-white text-lg font-bold hover:text-orange-400">ABOUT</a></li>
+                <li><a href="#SEARCH" class="text-white text-lg font-bold hover:text-orange-400">SEARCHES</a></li>
+                <li><a href="#GALLERY" class="text-white text-lg font-bold hover:text-orange-400">GALLERY</a></li>
+                <li><a href="#REVIEW" class="text-white text-lg font-bold hover:text-orange-400">REVIEW</a></li>
+                
+            <!--Signup-->
+                <li><a href="signup.html">
+                    <button class="px-3 py-1 border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white hover:border-white transition top-2 right- flex space-x-2 items-center">
+                     Sign up
+                    
+                    </button></a>
+                </li>
+                </div>
+            </div>
+        </ul>
+     </nav>
+</section>
+<!--nav end-->
+<!--home page-->
+<section>
+    <div id="HOME" class="relative bg-[url('Assests/images/HOME.webp')] bg-cover h-screen justify-center items-center w-full">
+    <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+        <h1 class="text-4xl md:text-5xl font-bold"> WELCOME TO OUR<br> THIVYAN BOOKSHOP</h1>
+             <p class="mt-4 text-lg max-w-2xl font-semibold">"There is no friend as loyal as a book"</p>
+    </div>
+    </div><br>
+</section>
+<!--home page end-->
+<!--about-->
+<section>
+    <div id="ABOUT"class="bg-white border-10 border-gray-300 rounded-lg   relative  flex">
+        
+        <!-- Arrow Image (Positioned at Bottom) -->
+         <div>
+            <img src="Assests/images/collage preview.png" alt="photo college" class=" absolute right-10  flex w-30 h-screen">
+        <div class="absolute  bg-white-100 bg-opacity-10"></div>
+        
+        <!-- Overlay Text -->
+        <div class="absolute w-full h-screen flex  bg-white bg-opacity-20 ">
+            <h1 class="text-black text-2xl font-bold left-5 top-[70%] translate right-40 justify-center items-center flex" style="padding-left: 100px;">ABOUT US <br><br>
+                "Discover a world of books at your fingertips with our <br>online bookstore.  
+                Browse through a wide selection of titles<br> from fiction to non-fiction, with just a few clicks.<br>
+                Enjoy fast delivery and hassle-free shopping<br>all from the comfort of your home!"</h1>
+        </div>
+        
+        <div>
+           <img src="Assests/images/collage preview.png" alt="photo college" class=" absolute right-40 justify-center items-center flex w-30 h-screen">
+          <img src="Assests/images/about_preview.png" class="w-300 h-screen">
+        </div>
+</section>
+<!--about end-->
+<!--search bar-->
+<section>
+    <div id="SEARCH"class="relative w-50 h-80 bg-[url('Assests/images/book-shop-7.webp')] bg-cover bg-center flex items-center">
+        <div class="absolute inset-0 bg-black bg-opacity-90"></div>
+        <div class="relative z-10 flex flex-col justify-center h-full  w-700 text-white px-600 items-center ">
+            <div class="flex justify-center py-10 ">
+                <h1 class="text-2xl text-white-500">Search Your books here </h1><br><br>
+                <input type="text" placeholder="Search..." class="p-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <button class="p-3 bg-blue-500 text-white rounded-r-md hover:bg-blue-600 focus:outline-none">
+                  Search
+                </button>
+              </div>
+              
+        </div>
+    </div>
+    </section><br>
+<!--searchbar end-->
+<!--gallery-->
+<section>
+    <!--Gallery-->
+    <section>
+        <div id="GALLERY"class=" bg-gray-100 p-4 border-1-4 border-orange-500">
+            <div class="text-center">
+                <span class="bg-gray-300 text-orange-600 text-xs font-bold px-3 py-1 rounded-full">Gallery</span>
+                <h2 class="text-4xl font- text-gray-900 hover:color-orange">"The more that you read, the more things you will know.<br> The more that you learn, the more places you'll go." – Dr. Seuss</h2> 
+                <div class="mt-4 space-0 flex justify-center items-center">
+                </div>
+            </div>
+            <div style="padding-left: 600px";>
+            <a href="books.html"><button class="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-2 py-2 rounded-md text-lg flex space-x-6 ">
+                CLICK HERE<br></a>
+                </button><br>
+            </div>
+            <div class="grid grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <!-- 1-->
+                <div class="bg-white rounded-lg flex flex-col items-center p-3">
+                    <a href="html/gb.html">
+                        <div class="relative w-64 h-64 hover-container overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <img src="Assests/images/TA book.jpeg" alt="Sample Image" class="w-full h-full object-cover transition-transform duration-300 hover-image">
+                            <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 text-white text-center py-2 opacity-0 transition-opacity duration-300 details">
+                                <p class="text-lg font-semibold">Physichology of money</p>
+                                <p class="text-sm">Some additional details about this image.<br> click</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- 2-->
+                <div class="bg-white rounded-lg flex flex-col items-center p-3">
+                    <a href="html/sompane.html">
+                        <div class="relative w-64 h-64 hover-container overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <img src="Assests/images/TA book2 .jpeg" alt="Sample Image" class="w-full h-full object-cover transition-transform duration-300 hover-image">
+                            <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 text-white text-center py-2 opacity-0 transition-opacity duration-300 details">
+                                <p class="text-lg font-semibold">Leadership</p>
+                                <p class="text-sm">Some additional details about this image<br>click.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!--3-->
+                <div class="bg-white rounded-lg flex flex-col items-center p-4">
+                    <a href="html/music.html">
+                        <div class="relative w-64 h-64 hover-container overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <img src="Assests/images/Auto3.jpeg" alt="Sample Image" class="w-full h-full object-cover transition-transform duration-300 hover-image">
+                            <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 text-white text-center py-2 opacity-0 transition-opacity duration-300 details">
+                                <p class="text-lg font-semibold">Story book</p>
+                                <p class="text-sm">Some additional details about this image<br>click.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <!--4-->
+                <div class="bg-white rounded-lg flex flex-col items-center p-4">
+                    <a href="html/print.html">
+                        <div class="relative w-64 h-64 hover-container overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <img src="Assests/images/TA books 8.jpeg" alt="Sample Image" class="w-full h-full object-cover transition-transform duration-300 hover-image">
+                            <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 text-white text-center py-2 opacity-0 transition-opacity duration-300 details">
+                                <p class="text-lg font-semibold">Rich father</p>
+                                <p class="text-sm">Some additional details about this image.<br>feed</p>
+                            </div>
+                        </div>
+                   </a>
+                </div>
+    
+                <!--5-->
+                <div class="bg-white rounded-lg flex flex-col items-center p-4">
+                    <a href="html/food.html">
+                        <div class="relative w-64 h-64 hover-container overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <img src="Assests/images/EN books4.jpeg" alt="Sample Image" class="w-full h-full object-cover transition-transform duration-300 hover-image">
+                            <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 text-white text-center py-2 opacity-0 transition-opacity duration-300 details">
+                                <p class="text-lg font-semibold">Secret</p>
+                                <p class="text-sm">Some additional details about this image.<br> click</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!--6-->
+                <div class="bg-white rounded-lg flex flex-col items-center p-4">
+                    <a href="html/art.html">
+                        <div class="relative w-64 h-64 hover-container overflow-hidden rounded-lg shadow-lg cursor-pointer">
+                            <img src="Assests/images/TA books 7.jpeg" alt="Sample Image" class="w-full h-full object-cover transition-transform duration-300 hover-image">
+                            <div class="absolute bottom-0 left-0 w-full bg-black bg-opacity-70 text-white text-center py-2 opacity-0 transition-opacity duration-300 details">
+                                <p class="text-lg font-semibold">Story</p>
+                                <p class="text-sm">Some additional details about this image.<br>click</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div><br><br>
+        </div>
+    </section><br><br>
+    <!--Gallery end-->
+<!--review-->
+<section>
+
+<div id="REVIEW"style="padding-left: 300px;">
+<div class="flex items-center mb-2 justify-center">
+    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <svg class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+        <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
+    </svg>
+    <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">4.95</p>
+    <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">out of</p>
+    <p class="ms-1 text-sm font-medium text-gray-500 dark:text-gray-400">5</p>
+</div>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">1,745 global ratings</p>
+<div class="flex items-center mt-4">
+    <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">5 star</a>
+    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+        <div class="h-5 bg-yellow-300 rounded-sm" style="width: 70%"></div>
+    </div>
+    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">70%</span>
+</div>
+<div class="flex items-center mt-4">
+    <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">4 star</a>
+    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+        <div class="h-5 bg-yellow-300 rounded-sm" style="width: 17%"></div>
+    </div>
+    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">17%</span>
+</div>
+<div class="flex items-center mt-4">
+    <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">3 star</a>
+    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+        <div class="h-5 bg-yellow-300 rounded-sm" style="width: 8%"></div>
+    </div>
+    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">8%</span>
+</div>
+<div class="flex items-center mt-4">
+    <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">2 star</a>
+    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+        <div class="h-5 bg-yellow-300 rounded-sm" style="width: 4%"></div>
+    </div>
+    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">4%</span>
+</div>
+<div class="flex items-center mt-4">
+    <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">1 star</a>
+    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded-sm dark:bg-gray-700">
+        <div class="h-5 bg-yellow-300 rounded-sm" style="width: 1%"></div>
+    </div>
+    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">1%</span>
+</div>   
+</div>
+</section><br>
+<!--review star end-->
+<!--footer-->
+<section>
+    <footer class="bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class=" hover:underline">About</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Careers</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Brand Center</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Discord Server</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Twitter</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Facebook</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Licensing</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Download</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">iOS</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Android</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Windows</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">MacOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2025 <a href="https://flowbite.com/">THIVYAN BOOKSHOP™</a>. All Rights Reserved.
+            </span>
+            <div style="padding-left: 700px;">
+                <p> DESIGN BY THIVY CREATIONS</p>
+            </div>
+            </div>
+          </div>
+        </div>
+    </footer>
+    
+
+</section>
+<style>
+    .hover-container:hover .hover-image {
+        transform: scale(1.2);
+    }
+    .hover-container:hover .details {
+        opacity: 1;
+    }
+</style>
+</body>
+</html>
