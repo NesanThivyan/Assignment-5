@@ -145,28 +145,7 @@ function validateForm() {
 
 
 
-// const reviewForm = document.getElementById("reviewForm");
-// const reviewText = document.getElementById("reviewText");
-// const output = document.getElementById("output");
 
-// reviewForm.addEventListener("submit", (event) => {
-//     event.preventDefault();
-
-//     if (selectedRating === 0 || reviewText.value.trim() === "") {
-//         alert("Please select a rating and write a review.");
-//         return;
-//     }
-
-//     output.innerHTML = `
-//         <p><strong>Your Rating:</strong> ${"⭐".repeat(selectedRating)}</p>
-//         <p><strong>Your Review:</strong> ${reviewText.value.trim()}</p>
-//     `;
-
-    // Reset form
-//     reviewText.value = "";
-//     selectedRating = 0;
-//     updateStars(0);
-// });
 let autoSlideIndex = 0;
 
 function autoSlide() {
@@ -256,3 +235,24 @@ document.getElementById("search").addEventListener("click", function () {
       resultDiv.innerHTML = `<p class="text-white mt-4">You searched for: <strong>${query}</strong></p>`;
     }
   });
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target); // Optional: fade only once
+        }
+      });
+    }, {
+      threshold: 1.0
+    });
+
+    fadeElements.forEach(el => observer.observe(el));
+  });
+
+
+ 

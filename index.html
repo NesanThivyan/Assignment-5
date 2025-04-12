@@ -81,6 +81,19 @@
           padding: 15px;
           backface-visibility: visible;
          }
+
+         .fade-in {
+           opacity: 0;
+           transform: translateY(20px);
+           transition: opacity 1s ease-out, transform 1s ease-out;
+         }
+
+       .fade-in.visible {
+          opacity: 1;
+         transform: translateY(0);
+         }
+
+
      </style>
     <title>Online Libruary </title>
 </head>
@@ -110,7 +123,7 @@
                     <li><a href="#ABOUT" class="text-white text-lg font-bold hover:text-orange-400">ABOUT</a></li>
                     <li><a href="#SEARCH" class="text-white text-lg font-bold hover:text-orange-400">SEARCHES</a></li>
                     <li><a href="#GALLERY" class="text-white text-lg font-bold hover:text-orange-400">GALLERY</a></li>
-                    <li><a href="#REVIEW" class="text-white text-lg font-bold hover:text-orange-400">REVIEW</a></li>
+                    <li><a href="#review" class="text-white text-lg font-bold hover:text-orange-400">REVIEW</a></li>
                     <li><button class="px-2 py-1 border-1-4  border border-orange-500 text-orange-500 rounded-md hover:bg-orange-500 hover:text-white hover:border-white transition top-2 right- flex space-x-2 items-center " id="dark" onclick="darkmood()">dark</button></li>
                     <!--Signup-->
                     <li><a href="signup.html">
@@ -145,7 +158,7 @@
                 </div>
                
                 <div class="w-full flex-shrink-0">
-                    <img src="Assests/images/slide1.jpeg" alt="Slide 2" class="w-full h-screen object-cover"> 
+                    <img src="Assests/SLIDE2.png" alt="Slide 2" class="w-full h-screen object-cover"> 
                     <div class="absolute inset-0 bg-black bg-opacity-40">
                         <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
                             <h1 class="text-4xl md:text-5xl font-bold">WELCOME TO OUR<br>THIVYAN BOOKSHOP</h1>
@@ -184,7 +197,7 @@
     </section><br>
  <!--homepage end-->
       <!-- About Section -->
-     <section class="bg-white flex flex-wrap items-center justify-center w-200 h-100" id="ABOUT">
+     <!-- <section class="bg-white flex flex-wrap items-center justify-center w-200 h-100" id="ABOUT">
         <img src="Assests/images/about_preview.png" alt="About Image" class="w-200 h-auto rounded-lg object-cover">
         <div class="max-w-xl text-center md:text-left" >
             <h1 class="text-black text-3xl font-bold mb-4">ABOUT US</h1>
@@ -194,14 +207,27 @@
                 Enjoy fast delivery and hassle-free shopping — all from the comfort of your home!
             </p>
         </div>
-    </section>
+    </section> -->
+    <section class="bg-white flex flex-wrap items-center justify-center w-200 h-100 fade-in" id="ABOUT">
+        <img src="Assests/images/about_preview.png" alt="About Image" class="w-200 h-auto rounded-lg object-cover">
+        <div class="max-w-xl text-center md:text-left">
+          <h1 class="text-black text-3xl font-bold mb-4">ABOUT US</h1>
+          <p class="text-gray-700 text-lg">
+            Discover a world of books at your fingertips with our online bookstore.  
+            Browse through a wide selection of titles from fiction to non-fiction, with just a few clicks.
+            Enjoy fast delivery and hassle-free shopping — all from the comfort of your home!
+          </p>
+        </div>
+      </section>
+      
     <!-- About Section End -->
 
 
     <!--search bar-->
     <section id="SEARCH" class="relative w-full h-80 bg-[url('Assets/images/book-shop-7.webp')] bg-cover bg-center flex items-center">
         <div class="absolute inset-0 bg-black bg-opacity-90"></div>
-        <div class="relative z-10 flex flex-col justify-center h-full w-full text-white px-6 items-center">
+    
+        <div class="relative z-10 flex flex-col  h-full w-full text-white  top-5 items-center justify-center">
             <h1 class="text-2xl mb-4">Search Your Books Here</h1>
             <div class="flex w-full max-w-md">
                 <input type="text" placeholder="Search the books" class="p-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 text-blue-600 w-full">
@@ -331,7 +357,7 @@
 
    <!--review-->
    <section>
-    <div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md space-y-6">
+    <div id="review"class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow-md space-y-6">
         <h2 class="text-2xl font-bold text-center text-gray-800">Leave a Rating & Review</h2>
     
         <!-- Stars -->
@@ -386,7 +412,7 @@
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Help center</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="#" class="hover:underline">Discord Server</a>
+                                <a href="#" class="hover:underline">github</a>
                             </li>
                             <li class="mb-4">
                                 <a href="#" class="hover:underline">Twitter</a>
